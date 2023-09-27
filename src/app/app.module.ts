@@ -16,7 +16,8 @@ import { PageComponent } from './components/views/page/page.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

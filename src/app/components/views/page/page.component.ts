@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-page',
   templateUrl: './page.component.html',
   styleUrls: ['./page.component.css']
 })
-export class PageComponent {
+export class PageComponent implements OnInit{
 
+  constructor(){
+
+   }
+
+  ngOnInit(): void {
+}
 }

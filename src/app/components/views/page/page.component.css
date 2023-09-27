@@ -1,4 +1,5 @@
-body {
+* {margin: 0; padding: 0; box-sizing: border-box;}
+.body1 {
   background-image: url("src/assets/img/home.png");
   background-size: cover;
 }
@@ -12,7 +13,7 @@ body {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
 }
 
@@ -31,8 +32,24 @@ p {
   margin-top: 100px;
   color: white;
   font-size: 40px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
+}
+
+.especialidades {
+  color: white;
+  font-size: 15px;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.name {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  color: white;
+  font-size: 45px;
+  margin-top: 50px;
+  margin-left: 130px;
 }
 
 a {
@@ -58,6 +75,7 @@ a {
   text-decoration: none;
   color: white;
   font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* div 2  */
@@ -66,7 +84,7 @@ a {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   height: 640px;
-  background-image: linear-gradient(45deg, rgb(223, 187, 153), rgb(46, 38, 31));
+  background-color: #7d8894f8;
 }
 
 .nome {
@@ -115,7 +133,7 @@ a {
 
 .caixa3 {
   height: 570px;
-  background-image: linear-gradient(100deg, rgb(223, 187, 153), rgb(46, 38, 31));
+  background-color: #7d8894f8;
   border-top: 2px solid black;
 }
 
@@ -129,46 +147,32 @@ a {
   font-style: italic;
 }
 
-.imgCard {
+.body2 {
+  place-items: center;
+  display: grid;
+  background-image: url("src/assets/img/imagemFundoHome.png");
+}
+
+#items-wrapper {
+  width: 50vw;
+}
+
+#items {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.item {
+  flex: none;
   width: 100%;
-  height: 50%;
-  border-radius: 9px 9px 0px 0px;
-  box-shadow: 0px 8px 6px -6px black;
+  height: 530px;
+  scroll-snap-align: start;
 }
 
-.card {
-  margin-top: 30px;
-  margin-left: 30px;
-  width: 300px;
-  height: 450px;
-  border-radius: 9px;
-  background-image: linear-gradient(45deg, rgb(206, 205, 205), rgb(131, 127, 127));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0px 8px 6px -6px black;
-  animation: go-back 5s backwards;
-}
-
-.textos {
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-
-}
-
-.textos h1 {
-  font-size: 15px;
-  margin-top: 10px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.textos p {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 13px;
+img {
+  width: 100%;
+  height: 98%;
 }
 
 /* div 4  */
@@ -176,14 +180,14 @@ a {
 .caixa4 {
   border-top: 2px solid black;
   height: 570px;
-  background-image: linear-gradient(45deg, rgb(223, 187, 153), rgb(46, 38, 31));
+  background-color: #7d8894f8;
 }
 
 @media screen and (max-width: 600px) {
 
-  body {
+  .body1 {
     background-image: none;
-    background-color: #7d8894f8;
+    background-color: #535e69f8;
   }
 
   .caixa1 {
@@ -216,15 +220,34 @@ a {
     text-align: center;
     margin-top: 50px;
     color: white;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
   }
 
-  a {
+  .especialidades {
+    color: white;
+    font-size: 8px;
     margin-top: 25px;
+    margin-left: 40px;
+  }
+
+  a {
+    font-size: 10px;
+    height: 10%;
+    width: 37%;
+    margin-top: 15px;
     margin-left: 100px;
     color: white;
+  }
+
+  .name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 100px;
   }
 
   /* div 2  */
@@ -232,7 +255,7 @@ a {
   .caixa2 {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(45deg, rgb(223, 187, 153), rgb(46, 38, 31));
+    background-color: #535e69f8;
   }
 
   .nome {
@@ -286,51 +309,51 @@ a {
 
   /* div 3  */
 
-.caixa3 {
-  display: none;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(100deg, rgb(223, 187, 153), rgb(46, 38, 31));
-  border-top: 2px solid black;
-}
+  .caixa3 {
+    height: 100%;
+    width: 100%;
+    background-color: #7d8894f8;
+    border-top: 2px solid black;
+  }
 
-.tituloServico {
-  text-align: center;
-  margin-left: 30px;
-  margin-top: 5px;
-  color: white;
-  font-size: 15px;
-  font-family: 'Times New Roman', Times, serif;
-  font-style: italic;
-}
+  .tituloServico {
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 5px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+  }
 
-.imgCard {
- display: none;
-}
 
-.card {
-  display: none;
-}
+  .body2 {
+    place-items: center;
+    display: grid;
+    background-color:#7d8894f8;
+  }
 
-.textos {
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  #items-wrapper {
+    width: 90vw;
+    margin-bottom: 50px;
+  }
 
-}
+  #items {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .item {
+    flex: none;
+    width: 100%;
+    height: 530px;
+    scroll-snap-align: start;
+  }
 
-.textos h1 {
-  font-size: 5px;
-  margin-top: 10px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.textos p {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 5px;
-}
+  img {
+    width: 100%;
+    height: 98%;
+  }
 
 }
