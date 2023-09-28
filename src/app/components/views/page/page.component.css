@@ -245,6 +245,7 @@ mat-icon {
   .caixa1 {
     height: 775px;
     width: 100%;
+    background-color: pink;
   }
 
   .header {
