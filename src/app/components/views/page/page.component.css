@@ -270,7 +270,7 @@ mat-icon {
   }
 
   .textoDiv1 {
-    text-align: center;
+    text-align: justify;
     margin-top: 50px;
     color: black;
     font-size: 15px;
@@ -282,7 +282,8 @@ mat-icon {
     color: black;
     font-size: 8px;
     margin-top: 25px;
-    margin-left: 40px;
+    margin-left: 20px;
+    text-align: justifyS;
   }
 
   .botao_home {
@@ -290,7 +291,7 @@ mat-icon {
     height: 10%;
     width: 37%;
     margin-top: 60px;
-    margin-left: 130px;
+    margin-left: 100px;
     color: black;
   }
 
@@ -300,7 +301,7 @@ mat-icon {
     color: black;
     font-size: 30px;
     margin-top: 30px;
-    margin-left: 120px;
+    margin-left: 80px;
   }
 
   /* div 2  */
@@ -336,7 +337,7 @@ mat-icon {
   .card1 {
     margin-top: 5px;
     margin-left: 5px;
-    width: 400px;
+    width: 310px;
     height: 300px;
     border-radius: 9px;
     background-image: linear-gradient(45deg, rgb(206, 205, 205), rgb(131, 127, 127));
@@ -349,7 +350,7 @@ mat-icon {
     margin-top: 3px;
     margin-left: 5px;
     margin-right: 10px;
-    width: 400px;
+    width: 310px;
     height: 460px;
     border-radius: 9px;
     background-image: linear-gradient(45deg, white, pink);
@@ -424,7 +425,7 @@ mat-icon {
   .img_contato {
     width: 50%;
     height: 50%;
-    margin-left: 120px;
+    margin-left: 85px;
     margin-top: 60px;
   }
 
@@ -446,10 +447,11 @@ mat-icon {
   .img_seta {
     width: 70%;
     height: 70%;
+    filter: drop-shadow(0px 0px 10px);
   }
 
   .seta {
-    margin-left: 80px;
+    margin-left: 30px;
   }
 
   .img_simbolo {
